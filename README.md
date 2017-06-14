@@ -15,15 +15,15 @@ If you only wish to know how to run the code, and understand what's being done b
 
 ### Table of Contents
 
-- [Tools Used](Tools Used#)
-- [Files](Files#)
-	- [Notebooks](Notebooks#)
-	- ["Outputs" folder]("Outputs" folder#)
-	- [CSVs](CSVs#)
-- [Understanding the Code](Understanding the Code#)
-	- [Processing the catalog](Processing the catalog#)
-	- [Processing target and training data](rocessing target and training data#)
-	- [Running the code](unning the code#)
+- [Tools Used](#Tools-Used)
+- [Files](#Files)
+	- [Notebooks](#Notebooks)
+	- ["Outputs" folder](#"Outputs"-folder)
+	- [CSVs](#CSVs)
+- [Understanding the Code](#Understanding-the-Code)
+	- [Processing the catalog](#Processing-the-catalog)
+	- [Processing target and training data](#Processing-target-and-training-data)
+	- [Running the code](#Running-the-code)
 
 ----------
 Tools Used
