@@ -7,9 +7,11 @@ In this challenge we had to find out the **gender** of users, based on their **c
 
 If you only wish to know how to run the code, and understand what's being done by it, jump to the **Understanding the Code** section of this document.
 
-> **Note:**
+> **Notes:**
 >
-> The tools and processes described here were performed under a Windows 7 environment. The code should work on Linux, but it's possible that a few lines of code may have to be changed.
+> - The tools and processes described here were performed under a Windows 7 environment. The code should work on Linux, but it's possible that a few lines of code may have to be changed.
+>
+> - Python 3.6 was used and compatibility with Python 2 is not assured.
 
 ----------
 
@@ -32,10 +34,10 @@ Tools Used
 For this project the following tools, and libraries, were utilized:
 
 - Jupyter
-- Python
+- Python 3.6
 	- Scikit-learn
 	- Pandas
-	- XGBoost*
+	- XGBoost **\***
 	- Matplotlib
 
 
