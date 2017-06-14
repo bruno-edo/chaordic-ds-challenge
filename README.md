@@ -35,8 +35,8 @@ For this project the following tools, and libraries, were utilized:
 
 - Jupyter
 - Python 3.6
-	- Scikit-learn
-	- Pandas
+	- Scikit-learn 0.18.1
+	- Pandas 0.20.2
 	- XGBoost **\***
 	- Matplotlib
 
