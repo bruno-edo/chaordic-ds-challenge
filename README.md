@@ -17,7 +17,7 @@ If you only wish to know how to run the code, and understand what's being done b
 
 ### Table of Contents
 
-- [Tools Used](#tools-used)
+- [Tools Employed](#tools-employed)
 - [Files](#files)
 	- [Notebooks](#notebooks)
 	- ["Outputs" folder](#"outputs"-folder)
@@ -28,10 +28,8 @@ If you only wish to know how to run the code, and understand what's being done b
 	- [Running the code](#running-the-code)
 
 ----------
-Tools Used
+Tools Employed
 -------------
-
-For this project the following tools, and libraries, were utilized:
 
 - Jupyter
 - Python 3.6
