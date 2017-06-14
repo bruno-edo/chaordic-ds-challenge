@@ -31,7 +31,7 @@ For this project the following tools, and libraries, were utilized:
 	- Matplotlib
 
 
-> ***** For Windows installation click [here](https://www.ibm.com/developerworks/community/blogs/jfp/entry/Installing_XGBoost_For_Anaconda_on_Windows?lang=en).
+> **\*** For Windows installation click [here](https://www.ibm.com/developerworks/community/blogs/jfp/entry/Installing_XGBoost_For_Anaconda_on_Windows?lang=en).
 
 ----------
 
