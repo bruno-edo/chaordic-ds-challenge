@@ -8,7 +8,7 @@ In this challenge we had to find out the **gender** of users, based on their **c
 If you only wish to know how to run the code, and understand what's being done by it, jump to the **Understanding the Code** section of this document.
 
 > **Note:**
-
+>
 > The tools and processes described here were performed under a Windows 7 environment. The code should work on Linux, but it's possible that a few lines of code may have to be changed.
 
 ----------
@@ -61,6 +61,7 @@ Understanding the Code
 -------------------
 
 > **Important**: If you want to see all the work that was done for this challenge take a look at the files **target-treatment** and **data-treatment**, but bear in mind that those files are very raw and might be confusing. While they do contain the work that resulted in the best model created here, they also contain code related to different approaches to the data modelling and prediction.
+>
 >If you don't want to see any of that: ignore these files and work with the files that have **polished** in their name.
 
 #### Processing the catalog
