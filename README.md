@@ -11,7 +11,7 @@ If you only wish to know how to run the code, and understand what's being done b
 >
 > - The tools and processes described here were performed under a Windows 7 environment. The code should work on Linux, but it's possible that a few lines of code may have to be changed.
 >
-> - Python 3.6 was used and compatibility with Python 2 is not assured.
+> - Python 3.6 was the Python version used, so compatibility with Python 2 is not assured.
 
 ----------
 
