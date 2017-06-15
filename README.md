@@ -23,8 +23,8 @@ If you only wish to know how to run the code, and understand what's being done b
 	- ["Outputs" folder](#"outputs"-folder)
 	- [CSVs](#csvs)
 - [Understanding the Code](#understanding-the-code)
-	- [Processing the catalog](#processing-the-catalog)
-	- [Processing target and training data](#processing-target-and-training-data)
+	- [Processing the catalog file](#processing-the-catalog-file)
+	- [Processing the target and training data files](#processing-the-target-and-training-data-files)
 	- [Running the code](#running-the-code)
 
 ----------
@@ -72,11 +72,31 @@ Understanding the Code
 >
 >If you don't want to see any of that: ignore these files and work with the files that have **polished** in their name.
 
-#### Processing the catalog
+#### Processing the catalog file
 
+Since the catalog has more than **20.000** different products it was necessary to reduce its dimensionality, for that end it was decided that the best way to do that would be to implement a unsupervised clustering algorithm, **K-NN** being selected for the first iteration. **K-NN** was chosen for how easy it's to implement and how powerful a starting point it can be.
 
+Considering that the chosen algorithm only works on numerical data, the columns **category** and **sub_category** had their values mapped to integers (**sub_sub_category** wasn't used as to not overfit the model). The value columns had their **NaN** values treated and a new column, **is_sale** was created indicating if the product had a discount or not.
 
-#### Processing target and training data
+Using the values from: **category**, **sub_category** and **is_sale**, the products were placed into 10 clusters by **K-NN** (new column called **cluster**).
+
+#### Processing the target and training data files
+
+Aggregating each user's data was key, but with so much data it was necessary to inspect each click type beforehand, so information that held no value could be discarded. In the end the rows that had the following values in their **page_type** column were dropped:
+
+ - **cart**
+ - **home**
+ - **brand_landing**
+ - **search**
+ - **confirmation**
+ - **other**
+ - **checkout**
+ - **category**
+ - **subcategory**
+
+After dropping what was considered as "noise" the data was aggregated over the **uid**, with each product browsed by the user, and each purchase object, being placed on array and, subsequently, on a new column - **products_browsed** and **products_purchased** respectively. Following that the new columns were processed to find out the user's favorite browsing cluster of products, favorite purchase cluster, average spending and if he likes items on sale, which generated new columns for each new information.
+
+Afterwards an **XGBoost** model was fitted by using the columns created (**favorite_purchase_cluster**, **favorite_browse_cluster**, **likes_sales** and **avg_spending**) and **K-Fold Cross Validation** - with **K** being set at **5** folds. Which yielded a model with an average precision score of around **80.7%** with standard deviation of **0.35%**.
 
 #### Running the code
 
