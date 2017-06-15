@@ -70,7 +70,7 @@ Understanding the Code
 
 > **Important**: If you want to see all the work that was done for this challenge take a look at the files **target-treatment** and **data-treatment**, but bear in mind that those files are very raw and might be confusing. While they do contain the work that resulted in the best model created here, they also contain code related to different approaches to the data modelling and prediction.
 >
->If you don't want to see any of that: ignore these files and work with the files that have **polished** in their name.
+>If you don't want to see any of that: ignore those and work with the files that have **polished** in their name.
 
 #### Processing the catalog file
 
