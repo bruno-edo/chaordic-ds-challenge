@@ -76,7 +76,7 @@ Understanding the Code
 
 Since the catalog has more than **20.000** different products it was necessary to reduce its dimensionality, for that end it was decided that the best way to do that would be to implement a unsupervised clustering algorithm, **K-NN** being selected for the first iteration. **K-NN** was chosen for how easy it's to implement and how powerful a starting point it can be.
 
-Considering that the chosen algorithm only works on numerical data, the columns **category** and **sub_category** had their values mapped to integers (**sub_sub_category** wasn't used as to not overfit the model). The value columns had their **NaN** values treated and a new column, **is_sale** was created indicating if the product had a discount or not.
+Considering that the chosen algorithm only works on numerical data, the columns **category** and **sub_category** had their values mapped to integers (**sub_sub_category** wasn't used as to not overfit the model). The price columns had their **NaN** values treated and a new column, **is_sale**, was created indicating if the product had a discount or not.
 
 Using the values from: **category**, **sub_category** and **is_sale**, the products were placed into 10 clusters by **K-NN** (new column called **cluster**).
 
