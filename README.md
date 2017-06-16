@@ -96,7 +96,7 @@ Aggregating each user's data was key, but with so much data it was necessary to 
 
 After dropping what was considered as "noise" the data was aggregated over the **uid**, with each product browsed by the user, and each purchase object, being placed on array and, subsequently, on a new column - **products_browsed** and **products_purchased** respectively. Following that the new columns were processed to find out the user's favorite browsing cluster of products, favorite purchase cluster, average spending and if he likes items on sale, which generated new columns for each new information.
 
-Afterwards an **XGBoost** model was fitted by using the columns created (**favorite_purchase_cluster**, **favorite_browse_cluster**, **likes_sales** and **avg_spending**) and **K-Fold Cross Validation** - with **K** being set at **5** folds. Which yielded a model with an average precision score of around **80.7%** with standard deviation of **0.35%**.
+Afterwards an **XGBoost** model was fitted by using the columns created (**favorite_purchase_cluster**, **favorite_browse_cluster**, **likes_sales** and **avg_spending**) and **K-Fold Cross Validation** (with **K** being set at **5** folds), which yielded a model with an average precision score of around **80.7%** with standard deviation of **0.35%**.
 
 #### Running the code
 
